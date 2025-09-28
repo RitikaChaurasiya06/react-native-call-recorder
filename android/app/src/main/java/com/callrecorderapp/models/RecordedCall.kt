@@ -13,5 +13,6 @@ data class RecordedCall(
     val callDuration: Long, // in milliseconds
     val startTime: Date,
     val endTime: Date,
-    val recordingFile: File
+    val recordingFile: File,
+    val filePath: String = recordingFile.absolutePath // Add filePath for CallDetailActivity
 ) : Parcelable
